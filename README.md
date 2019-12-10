@@ -15,30 +15,14 @@ Model accuracy = 90.898
 |**image**|0|0|0|0|154|
 
 ## Precision, Recall and F1 score
-**title**:
-Precision: 0.842
-Recall:    0.889
-F1 score:  0.865
 
-**text**:
-Precision: 0.925
-Recall:    0.958
-F1 score:  0.941
-
-**list**:
-Precision: 0.970
-Recall:    0.031
-F1 score:  0.059
-
-**table**:
-Precision: 0.979
-Recall:    0.570
-F1 score:  0.721
-
-**image**:
-Precision: 1.000
-Recall:    0.475
-F1 score:  0.644
+| |Precision|Recall|F1 score|
+|---|:---:|:---:|:---:|
+|**title**|0.842|0.889|0.865|
+|**text**|0.925|0.958|0.941|
+|**list**|0.970|0.031|0.059|
+|**table**|0.979|0.570|0.721|
+|**image**|1.000|0.475|0.644|
 
 # References
 - https://visualstudiomagazine.com/articles/2019/02/01/support-vector-machines.aspx
