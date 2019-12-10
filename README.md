@@ -43,6 +43,7 @@ See the [`GenerateData`](https://github.com/BobLd/PdfPigSvmRegionClassifier/blob
 Model accuracy = 90.898
 
 ## Confusion matrix
+
 | |title|text|list|table|image|
 |---:|:---:|:---:|:---:|:---:|:---:|
 |**title**|9312|1592|19|3|135|
@@ -64,6 +65,10 @@ Model accuracy = 90.898
 ## Code
 See the [Trainer](https://github.com/BobLd/PdfPigSvmRegionClassifier/blob/master/PdfPigSvmRegionClassifier/Trainer.cs) class to **train** and **evaluate** the model.
 After training, the SVM model will be saved as a Gzip.
+
+# Usage
+Once the training is finished, you can test the classification on a new pdf document by using either [DocstrumBoundingBoxes](https://github.com/UglyToad/PdfPig/blob/master/src/UglyToad.PdfPig/DocumentLayoutAnalysis/DocstrumBoundingBoxes.cs) or [RecursiveXYCut](https://github.com/UglyToad/PdfPig/blob/master/src/UglyToad.PdfPig/DocumentLayoutAnalysis/RecursiveXYCut.cs) to generate the text blocks, and then classify each block.
+See [SvmZoneClassifier](https://github.com/BobLd/PdfPigSvmRegionClassifier/blob/master/PdfPigSvmRegionClassifier/SvmZoneClassifier.cs) for a demo implementation.
 
 # References
 - https://visualstudiomagazine.com/articles/2019/02/01/support-vector-machines.aspx
