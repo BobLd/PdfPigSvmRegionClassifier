@@ -1,5 +1,5 @@
 # PdfPigSvmRegionClassifier
-SVM Region Classifier using PdfPig and Accord.Net
+Proof of concept of an SVM Region Classifier using PdfPig and Accord.Net
 
 # Model evaluation
 ## Accuracy
