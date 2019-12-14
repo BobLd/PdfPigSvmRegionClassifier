@@ -45,7 +45,7 @@ namespace PdfPigSvmRegionClassifier
                         Console.WriteLine(block.Text);
                         Console.WriteLine();
                     }
-
+                    
                     Console.ReadKey();
                 }
             }

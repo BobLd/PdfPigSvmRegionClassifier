@@ -12,6 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="model\model.gz">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Samples\Random 2 Columns Lists Chart.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
