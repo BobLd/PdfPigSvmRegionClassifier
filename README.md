@@ -1,5 +1,5 @@
 # PdfPig SVM Region Classifier
-Proof of concept of a simple SVM Region Classifier using PdfPig and Accord.Net. The model was trained on a subset of the [PubLayNet](https://github.com/ibm-aur-nlp/PubLayNet#getting-data) dataset. See their license [here](https://cdla.io/permissive-1-0/).
+Proof of concept of a simple SVM Region Classifier using [PdfPig](https://github.com/UglyToad/PdfPig) and [Accord.Net](https://github.com/accord-net/framework/). The model was trained on a subset of the [PubLayNet](https://github.com/ibm-aur-nlp/PubLayNet#getting-data) dataset. See their license [here](https://cdla.io/permissive-1-0/).
 
 The annotions from the dataset (see sample [here](https://github.com/ibm-aur-nlp/PubLayNet/blob/master/examples/samples.json)) were converted to the [PageXml](https://github.com/PRImA-Research-Lab/PAGE-XML) format.
 Images from the dataset were not used. We leverage the pdf document features directly instead.
