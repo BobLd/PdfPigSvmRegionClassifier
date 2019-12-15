@@ -44,6 +44,10 @@ See the [`GenerateData`](https://github.com/BobLd/PdfPigSvmRegionClassifier/blob
 ## Accuracy
 Model accuracy = 90.898
 
+## Normalised confusion matrix
+
+![Normalised confusion matrix](https://github.com/BobLd/PdfPigSvmRegionClassifier/blob/master/confusion%20matrix.png)
+
 ## Confusion matrix
 
 | |title|text|list|table|image|
