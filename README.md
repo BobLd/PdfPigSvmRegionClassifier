@@ -3,7 +3,7 @@ Proof of concept of a simple Support Vector Machine Region Classifier using [Pdf
 
 The objective is to classify each text block using machine learning in a pdf document page as either _title_, _text_, _list_, _table_ and _image_.
 
-The annotions from the dataset (see sample [here](https://github.com/ibm-aur-nlp/PubLayNet/blob/master/examples/samples.json)) were converted to the [PageXml](https://github.com/PRImA-Research-Lab/PAGE-XML) format.
+The annotions from the dataset (see sample [here](https://github.com/ibm-aur-nlp/PubLayNet/blob/master/examples/samples.json)) were converted to the [PAGE](https://github.com/PRImA-Research-Lab/PAGE-XML) xml format.
 Images from the dataset were not used. We leverage the pdf document features directly instead.
 
 # Labels 
@@ -65,12 +65,12 @@ Model accuracy = 90.898
 |**image**|1.000|0.475|0.644|
 
 ## Code
-See the [Trainer](https://github.com/BobLd/PdfPigSvmRegionClassifier/blob/master/PdfPigSvmRegionClassifier/Trainer.cs) class to **train** and **evaluate** the model.
+See the [`Trainer`](https://github.com/BobLd/PdfPigSvmRegionClassifier/blob/master/PdfPigSvmRegionClassifier/Trainer.cs) class to **train** and **evaluate** the model.
 After training, the SVM model will be saved as a Gzip.
 
 # Usage
 Once the training is finished, you can test the classification on a new pdf document by using either [DocstrumBoundingBoxes](https://github.com/UglyToad/PdfPig/blob/master/src/UglyToad.PdfPig/DocumentLayoutAnalysis/DocstrumBoundingBoxes.cs) or [RecursiveXYCut](https://github.com/UglyToad/PdfPig/blob/master/src/UglyToad.PdfPig/DocumentLayoutAnalysis/RecursiveXYCut.cs) to generate the text blocks, and then classify each block.
-See [SvmZoneClassifier](https://github.com/BobLd/PdfPigSvmRegionClassifier/blob/master/PdfPigSvmRegionClassifier/SvmZoneClassifier.cs) for a demo implementation. The SVM trained model is available [here](https://github.com/BobLd/PdfPigSvmRegionClassifier/tree/master/PdfPigSvmRegionClassifier/model).
+See [`SvmZoneClassifier`](https://github.com/BobLd/PdfPigSvmRegionClassifier/blob/master/PdfPigSvmRegionClassifier/SvmZoneClassifier.cs) for a demo implementation. The SVM trained model is available [here](https://github.com/BobLd/PdfPigSvmRegionClassifier/tree/master/PdfPigSvmRegionClassifier/model).
 
 # References
 - https://visualstudiomagazine.com/articles/2019/02/01/support-vector-machines.aspx
