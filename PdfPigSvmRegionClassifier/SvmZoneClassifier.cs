@@ -11,10 +11,10 @@ namespace PdfPigSvmRegionClassifier
 {
     class SvmZoneClassifier
     {
-        public static void Evaluate(string trainingFolder)
+        public static void Evaluate(string modelFolder, string dataFolder)
         {
-            var svm = Serializer.Load<MulticlassSupportVectorMachine<Gaussian>>(Path.Combine(trainingFolder, "model.gz"), SerializerCompression.GZip);
-            Trainer.Evaluate(svm, trainingFolder);
+            var svm = Serializer.Load<MulticlassSupportVectorMachine<Gaussian>>(Path.Combine(modelFolder, "model.gz"), SerializerCompression.GZip);
+            Trainer.Evaluate(svm, dataFolder);
         }
 
         public static void TestClassification(string trainingFolder, string pdfPath)

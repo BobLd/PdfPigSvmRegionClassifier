@@ -45,11 +45,11 @@ namespace PdfPigSvmRegionClassifier
             return (inputs, output);
         }
 
-        public static void Evaluate(MulticlassSupportVectorMachine<Gaussian> svm, string trainingFolder, int lim = 0)
+        public static void Evaluate(MulticlassSupportVectorMachine<Gaussian> svm, string dataFolder, int lim = 0)
         {
             Console.WriteLine("Evaluating SVM model...");
 
-            (double[][] inputs, int[] output) = ReadData(trainingFolder, lim);
+            (double[][] inputs, int[] output) = ReadData(dataFolder, lim);
 
             int[] preds = svm.Decide(inputs);
             double[] score = svm.Score(inputs);
