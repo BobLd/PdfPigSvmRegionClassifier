@@ -13,6 +13,11 @@ namespace PdfPigSvmRegionClassifier
 {
     static class GenerateData
     {
+        /// <summary>
+        /// Generate a csv file of features. You will need the pdf documents and the ground truths in PAGE xml format.
+        /// </summary>
+        /// <param name="trainingFolder">The path to the training folder. Should contain both the pdf files and their corresponding ground truth xml files.</param>
+        /// <param name="numberOfPdfDocs">Number of documents to concider.</param>
         public static void GenerateCsv(string trainingFolder, int numberOfPdfDocs)
         {
             List<double[]> features = new List<double[]>();
