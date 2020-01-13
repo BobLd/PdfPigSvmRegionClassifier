@@ -3,8 +3,7 @@ Proof of concept of a simple Support Vector Machine Region Classifier using [Pdf
 
 The objective is to classify each text block using machine learning in a pdf document page as either _title_, _text_, _list_, _table_ and _image_.
 
-The annotions from the dataset (see sample [here](https://github.com/ibm-aur-nlp/PubLayNet/blob/master/examples/samples.json)) were converted to the [PAGE](https://github.com/PRImA-Research-Lab/PAGE-XML) xml format.
-Images from the dataset were not used. We leverage the pdf document features directly instead.
+The annotions from the dataset (see sample [here](https://github.com/ibm-aur-nlp/PubLayNet/blob/master/examples/samples.json)) were converted to the [PAGE](https://github.com/PRImA-Research-Lab/PAGE-XML) xml format. See the [`PageXmlConverter`](https://github.com/BobLd/PdfPigSvmRegionClassifier/blob/master/PdfPigSvmRegionClassifier/PageXmlConverter.cs) to convert the json file into PAGE xml files. Images from the dataset were not used. You will need to download the pdf documents separately as we leverage the pdf documents features directly instead.
 
 # Labels 
 Following the [PubLayNet](https://github.com/ibm-aur-nlp/PubLayNet) methodology, the following [categories](https://github.com/ibm-aur-nlp/PubLayNet/tree/master/pre-trained-models) are available:
