@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using UglyToad.PdfPig.Content;
-using UglyToad.PdfPig.Geometry;
-using static UglyToad.PdfPig.Geometry.PdfPath;
+using UglyToad.PdfPig.Core;
+using static UglyToad.PdfPig.Core.PdfPath;
 
 namespace PdfPigSvmRegionClassifier
 {

@@ -5,7 +5,7 @@ using System;
 using System.IO;
 using System.Linq;
 using UglyToad.PdfPig;
-using UglyToad.PdfPig.DocumentLayoutAnalysis;
+using UglyToad.PdfPig.DocumentLayoutAnalysis.PageSegmenter;
 
 namespace PdfPigSvmRegionClassifier
 {

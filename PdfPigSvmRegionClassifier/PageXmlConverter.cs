@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
-using static UglyToad.PdfPig.Export.PageXmlTextExporter;
+using UglyToad.PdfPig.DocumentLayoutAnalysis.Export.PAGE;
 
 namespace PdfPigSvmRegionClassifier
 {

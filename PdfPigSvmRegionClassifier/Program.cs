@@ -9,7 +9,7 @@ namespace PdfPigSvmRegionClassifier
 
         static void Main(string[] args)
         {
-            GenerateData.GenerateCsv(trainingFolder, 3000);
+            //GenerateData.GenerateCsv(trainingFolder, 3000);
             //GenerateData.GenerateCsv(validationFolder, 800);
 
             //Trainer.Train(trainingFolder);
